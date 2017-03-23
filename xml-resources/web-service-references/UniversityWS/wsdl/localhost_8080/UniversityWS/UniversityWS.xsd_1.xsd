@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:tns="http://UniversityWS/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://UniversityWS/">
+
+<xs:element name="AllComunidadA" type="tns:AllComunidadA"/>
+
+<xs:element name="AllComunidadAResponse" type="tns:AllComunidadAResponse"/>
+
+<xs:element name="AllNumberOfUniversity" type="tns:AllNumberOfUniversity"/>
+
+<xs:element name="AllNumberOfUniversityResponse" type="tns:AllNumberOfUniversityResponse"/>
+
+<xs:element name="AllStudents" type="tns:AllStudents"/>
+
+<xs:element name="AllStudentsResponse" type="tns:AllStudentsResponse"/>
+
+<xs:element name="AllUniversity" type="tns:AllUniversity"/>
+
+<xs:element name="AllUniversityResponse" type="tns:AllUniversityResponse"/>
+
+<xs:element name="InsertarCA" type="tns:InsertarCA"/>
+
+<xs:element name="InsertarCAResponse" type="tns:InsertarCAResponse"/>
+
+<xs:element name="NumberOfStudents" type="tns:NumberOfStudents"/>
+
+<xs:element name="NumberOfStudentsResponse" type="tns:NumberOfStudentsResponse"/>
+
+<xs:element name="NumerOfUniversity" type="tns:NumerOfUniversity"/>
+
+<xs:element name="NumerOfUniversityResponse" type="tns:NumerOfUniversityResponse"/>
+
+<xs:complexType name="AllNumberOfUniversity">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="AllNumberOfUniversityResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="NumberOfStudents">
+<xs:sequence>
+<xs:element name="uni" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="NumberOfStudentsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="InsertarCA">
+<xs:sequence>
+<xs:element name="ComunidadAutonoma" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="InsertarCAResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AllStudents">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="AllStudentsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="NumerOfUniversity">
+<xs:sequence>
+<xs:element name="CA" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="NumerOfUniversityResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AllUniversity">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="AllUniversityResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AllComunidadA">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="AllComunidadAResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
